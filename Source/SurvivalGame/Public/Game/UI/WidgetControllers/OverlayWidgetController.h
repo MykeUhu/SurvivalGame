@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿// OverlayWidgetController.h
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "UhuWidgetController.h"

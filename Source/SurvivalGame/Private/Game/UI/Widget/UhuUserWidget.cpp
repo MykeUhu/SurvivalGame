@@ -1,5 +1,5 @@
-﻿// Copyright by MykeUhu
-
+﻿// UhuUserWidget.cpp
+// Copyright by MykeUhu
 
 #include "Game/UI/Widget/UhuUserWidget.h"
 

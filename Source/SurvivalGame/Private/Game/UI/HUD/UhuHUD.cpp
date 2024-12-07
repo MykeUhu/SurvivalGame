@@ -1,4 +1,7 @@
-﻿#include "Game/UI/HUD/UhuHUD.h"
+﻿// GameSave.cpp
+// Copyright by MykeUhu
+
+#include "Game/UI/HUD/UhuHUD.h"
 
 #include "Game/UI/Widget/UhuUserWidget.h"
 #include "Game/UI/WidgetControllers/OverlayWidgetController.h"

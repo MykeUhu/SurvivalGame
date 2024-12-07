@@ -1,8 +1,13 @@
-﻿#include "Game/Player/UhuPlayerController.h"
+﻿// UhuPlayerController.cpp
+// Copyright by MykeUhu
+
+#include "Game/Player/UhuPlayerController.h"
 
 #include "AbilitySystemBlueprintLibrary.h"
 #include "UhuGameplayTags.h"
 #include "EnhancedInputSubsystems.h"
+#include "EnhancedInputComponent.h"
+#include "Characters/UhuSurvivalCharacter.h"
 #include "Components/UhuAbilitySystemComponent.h"
 
 // -------------------------
@@ -36,6 +41,17 @@ void AUhuPlayerController::BeginPlay()
 	SetInputMode(InputModeData);
 }
 
+void AUhuPlayerController::SetupInputComponent()
+{
+	Super::SetupInputComponent();
+	
+	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(InputComponent))
+	{
+		//EnhancedInputComponent->BindAction(SpeedAdjustAction, ETriggerEvent::Triggered, this, &AUhuPlayerController::AdjustSpeedWithMouseWheel);
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AUhuPlayerController::Move);
+	}
+}
+
 // -------------------------
 // Gameplay-Tick
 // -------------------------
@@ -62,3 +78,20 @@ UUhuAbilitySystemComponent* AUhuPlayerController::GetASC()
 	}
 	return UhuAbilitySystemComponent;
 }
+
+void AUhuPlayerController::Move(const FInputActionValue& InputValue)
+{
+	FVector2D MoveDirection = InputValue.Get<FVector2D>();
+
+	if (AUhuSurvivalCharacter* ControlledCharacter = Cast<AUhuSurvivalCharacter>(GetPawn()))
+	{
+		// If the character is idle, restore the previous movement speed
+		if (ControlledCharacter->GetCurrentSpeedTag().MatchesTag(FUhuGameplayTags::Get().Movement_Speed_0))
+		{
+			ControlledCharacter->RestorePreviousMovementSpeed();
+		}
+
+		ControlledCharacter->CharacterMove(MoveDirection);
+	}
+}
+

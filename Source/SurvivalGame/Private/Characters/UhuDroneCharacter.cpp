@@ -1,4 +1,7 @@
-﻿#include "Characters/UhuDroneCharacter.h"
+﻿// UhuDroneCharacter.cpp
+// Copyright by MykeUhu
+
+#include "Characters/UhuDroneCharacter.h"
 #include "Net/UnrealNetwork.h"
 
 // Konstruktor

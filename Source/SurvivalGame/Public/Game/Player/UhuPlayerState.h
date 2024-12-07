@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿// UhuPlayerState.h
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "AbilitySystemInterface.h"

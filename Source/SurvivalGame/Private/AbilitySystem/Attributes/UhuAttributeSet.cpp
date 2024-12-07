@@ -1,4 +1,7 @@
-﻿#include "AbilitySystem/Attributes/UhuAttributeSet.h"
+﻿// UhuAttributeSet.cpp
+// Copyright by MykeUhu
+
+#include "AbilitySystem/Attributes/UhuAttributeSet.h"
 
 #include "AbilitySystemBlueprintLibrary.h"
 #include "UhuGameplayTags.h"

@@ -1,10 +1,15 @@
-﻿#pragma once
+﻿// UhuPlayerController.h
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "GameplayTagContainer.h"
+#include "InputActionValue.h"
 #include "UhuPlayerController.generated.h"
 
+class UUhuMovementDataAsset;
 // Forward-Declarations
 class UInputAction;
 class UInputMappingContext;
@@ -38,6 +43,16 @@ protected:
 	 * Initialisiert Eingabesystem und Cursor-Modus.
 	 */
 	virtual void BeginPlay() override;
+	virtual void SetupInputComponent() override;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<UInputAction> MoveAction;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<UInputMappingContext> DefaultMappingContext;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	TObjectPtr<UUhuMovementDataAsset> MovementDataAsset;
 
 private:
 	// -------------------------
@@ -63,4 +78,6 @@ private:
 	 * @return Zeiger auf die UUhuAbilitySystemComponent.
 	 */
 	UUhuAbilitySystemComponent* GetASC();
+
+	void Move(const FInputActionValue& InputValue);
 };

@@ -1,4 +1,7 @@
-﻿#include "Game/UI/WidgetControllers/UhuWidgetController.h"
+﻿// UhuWidgetController.cpp
+// Copyright by MykeUhu
+
+#include "Game/UI/WidgetControllers/UhuWidgetController.h"
 
 #include "AbilitySystem/Attributes/UhuAttributeSet.h"
 #include "Components/UhuAbilitySystemComponent.h"

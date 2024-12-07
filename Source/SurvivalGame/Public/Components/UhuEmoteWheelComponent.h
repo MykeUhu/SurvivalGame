@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿// UhuEmoteWheelComponent.h
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"

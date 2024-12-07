@@ -1,4 +1,8 @@
-﻿#include "AbilitySystem/Abilities/UhuAbilityBase.h"
+﻿// UhuAbilityBase.cpp
+// Copyright by MykeUhu
+
+#include "AbilitySystem/Abilities/UhuAbilityBase.h"
+
 #include "AbilitySystemComponent.h"
 #include "GameFramework/Actor.h"
 #include "Net/UnrealNetwork.h"

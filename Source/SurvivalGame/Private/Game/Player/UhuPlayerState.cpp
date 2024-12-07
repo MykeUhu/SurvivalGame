@@ -1,4 +1,7 @@
-﻿#include "Game/Player/UhuPlayerState.h"
+﻿// UhuPlayerState.cpp
+// Copyright by MykeUhu
+
+#include "Game/Player/UhuPlayerState.h"
 
 #include "AbilitySystem/Attributes/UhuAttributeSet.h"
 #include "Components/UhuAbilitySystemComponent.h"

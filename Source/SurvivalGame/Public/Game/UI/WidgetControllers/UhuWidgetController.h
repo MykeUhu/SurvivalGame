@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿// UhuWidgetController.h
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "AbilitySystemComponent.h"

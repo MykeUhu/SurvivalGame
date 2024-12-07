@@ -1,4 +1,7 @@
-﻿#include "Components/UhuSaveGameComponent.h"
+﻿// UhuSaveGameComponent.cpp
+// Copyright by MykeUhu
+
+#include "Components/UhuSaveGameComponent.h"
 
 #include "Game/SaveData/GameSave.h"
 #include "Kismet/GameplayStatics.h"

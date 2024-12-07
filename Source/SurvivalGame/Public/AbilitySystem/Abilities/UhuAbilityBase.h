@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿// UhuAbilityBase.h
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"

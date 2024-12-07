@@ -1,4 +1,7 @@
-﻿#include "Components/UhuAbilitySystemComponent.h"
+﻿// UhuAbilitySystemComponent.cpp
+// Copyright by MykeUhu
+
+#include "Components/UhuAbilitySystemComponent.h"
 
 #include "Net/UnrealNetwork.h"
 

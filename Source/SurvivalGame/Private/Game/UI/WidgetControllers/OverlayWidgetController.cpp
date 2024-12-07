@@ -1,4 +1,8 @@
-﻿#include "Game/UI/WidgetControllers/OverlayWidgetController.h"
+﻿// OverlayWidgetController.cpp
+// Copyright by MykeUhu
+
+#include "Game/UI/WidgetControllers/OverlayWidgetController.h"
+
 #include "AbilitySystem/Attributes/UhuAttributeSet.h"
 
 /** 

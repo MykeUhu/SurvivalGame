@@ -1,4 +1,8 @@
-﻿#pragma once
+﻿// PlayerInterface.h
+// Copyright by MykeUhu
+
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"

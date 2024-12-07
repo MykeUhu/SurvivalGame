@@ -1,4 +1,8 @@
-﻿#include "Components/UhuEmoteWheelComponent.h"
+﻿// UhuEmoteWheelComponent.cpp
+// Copyright by MykeUhu
+
+
+#include "Components/UhuEmoteWheelComponent.h"
 #include "Net/UnrealNetwork.h"
 
 // Konstruktor

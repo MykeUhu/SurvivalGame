@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿// UhuHUD.cpp
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/HUD.h"

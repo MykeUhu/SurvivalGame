@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿// UhuAbilitySystemComponent.h
+// Copyright by MykeUhu
+
+#pragma once
 
 #include "CoreMinimal.h"
 
